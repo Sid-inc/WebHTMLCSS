@@ -1,0 +1,418 @@
+body{
+    background: url("../images/body_bg.png") repeat-x;
+    background-color: #fff6ec;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    width: 100%;
+}
+
+#container{
+    background: url("../images/backgroud_image.png") no-repeat top center, url("../images/top_background.png") no-repeat;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#left{
+    width: 565px;
+    padding-top: 30px;
+    padding-left: 114px;
+}
+
+#right{
+    width: 178px;
+    border: 1px solid #e3d5c5;
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 38px;
+    margin-left: 10px;
+}
+
+h1{
+    margin: 0px;
+    padding: 0 0 0 5px;
+    font-size: 38px;
+    font-stretch: ultra-condensed;
+}
+
+#logo p{
+    background-color: #fff;
+    margin: 0 15px 0 10px;
+    width: 178px;
+}
+
+nav{
+    width: 173px;
+    height: 183px;
+    border: 1px solid #e3d5c5;
+    border-radius: 5px;
+    background: #fff;
+    margin:  42px 0 28px 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav ul li:last-child a{
+    background: url("../images/menu_marker.png") no-repeat left center;
+}
+
+nav a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #141210;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    width: 130px;
+    height: 11px;
+    padding: 2px 0 5px 15px;
+    background: url("../images/menu_marker.png") no-repeat left center, url("../images/menu_break_line.png") no-repeat left bottom;
+    font-size: 80%;
+}
+
+nav a:hover, .selected{
+    background: url("../images/menu_marker.png") no-repeat left center, url("../images/menu_break_line.png") no-repeat left bottom #ffeec6 !important;
+}
+
+nav ul{
+    margin: 22px 0 0 15px;
+    padding: 0;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 190%;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125%;
+    font-weight: normal;
+    background: url("../images/green_submit.png") no-repeat left bottom;
+    padding-left: 25px;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+section p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #34160c;
+    font-size: 80%;
+    width: 550px;
+}
+
+section span{
+    color: #d15401;
+    font-weight: bold;
+}
+
+#read_more{
+    width: 535;
+    height: 13px;
+    margin-top: -10px;  
+}
+
+section #button{
+    height: 13px;
+    width: 83px;
+    background: url("../images/read_more_button.png") no-repeat;
+    margin-left: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#list{
+    display: flex;
+}
+
+#list a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 76%;
+    color: #7d5400;
+    background: url("../images/parts_arrow.png") no-repeat left center;
+    padding-left: 10px;
+}
+
+#list div ul{
+    padding-left: 12px;
+    margin-top: 10px;
+}
+
+#list div li{
+    margin-bottom: 2px;
+}
+
+#search{
+    height: 71px;
+    margin: 10px 9px 0 14px;
+    background: #f16515;
+    border-radius: 5px;
+    padding: 7px 10px 10px 10px;
+}
+
+#search p{
+    margin: 0px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#search input[type="text"]{
+    width: 126px;
+    height: 19px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-top: 5px;
+}
+
+#search p a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    font-size: 74%;
+    display: block;
+    float: left;
+    margin-top: -3px;
+}
+
+#search input[type="submit"]{
+    background: url("../images/search_button.png") no-repeat;
+    display: block;
+    border: none;
+    height: 11px;
+    width: 32px;
+    margin: 7px 0 0 auto;
+    cursor: pointer;   
+}
+
+h4{
+    background: url("../images/news_logo.png") no-repeat left center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #381604;
+    margin-left: 14px;
+    padding-left: 16px;
+    margin-top: 10px;
+}
+
+h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url("../images/news_arrow.png") no-repeat left center, url("../images/news_break_line.png") no-repeat left bottom;
+    font-size: 71%;
+    margin-left: 14px;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    padding-left: 16px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+#new a{
+    text-decoration: none;
+    color: #8f3102;
+}
+
+#new a:hover{
+    text-decoration: underline;
+}
+
+#new p{
+    margin-left: 14px;
+    margin-top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 71%;
+    color: #34160c;
+}
+
+#support{
+    height: 78px;
+    width: 153px;
+    margin-left: 14px;
+    background: #f8b11d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#support:hover{
+    border-radius: 2px;
+}
+
+#support p{
+    font-weight: bolder;
+    font-size: 120%;
+    margin: 0;
+    text-align: center;
+    color: #973600;
+    font-weight: bolder;
+    font-stretch: expanded;
+    letter-spacing: 2px;
+}
+
+#support p:first-child{
+    letter-spacing: 0 !important;
+    padding-top: 15px;
+    color: #fff !important;
+    font-stretch: extra-condensed !important;
+}
+
+#auth > p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    margin-left: 14px;
+    margin-bottom: 0;
+    width: 143px;
+    border-radius: 5px 5px 0 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 30px;
+}
+
+#auth form{
+    background: #eaeaea;
+    height: 150px;
+    width: 143px;
+    margin-left: 14px;
+    margin-top: 0;
+    padding-left: 10px;
+}
+
+#auth form p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 60%;
+    margin: 0px;
+    padding-top: 3px;
+    width: 130px;
+}
+
+#auth form input[type="text"]{
+    width: 123px;
+    height: 17px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#auth form input[type="password"]{
+    width: 123px;
+    height: 17px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#auth span{
+    color: #3f3f3f;
+}
+
+#auth form input[type="checkbox"]{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+#auth form a{
+    color: #9a6902;
+}
+
+#auth form input[type="submit"]{
+    background: url("../images/login_button.png") no-repeat;
+    height: 11px;
+    width: 48px;
+    margin-top: 5px;
+    border: none;
+    margin-left: 85px;
+}
+
+footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 127px;
+    background: linear-gradient(180deg, #c4b5a3 0%, #ddd1c3 10%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#footer_menu{
+    padding-top: 1px;
+    text-align: center;
+}
+
+#copyright{
+    text-align: center;
+    color: #5d3608;
+    font-size: 80%;
+}
+
+#copyright p {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+footer li{
+    display: inline;
+}
+
+footer a{
+    font-weight: bold;
+    font-size: 80%;
+    text-decoration: none;
+    color: #000;
+    background: url("../images/footer_break_line.png") no-repeat right center;
+    padding-right: 10px;
+    padding-left: 8px;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer ul li:last-child a{
+    background: none;
+}
+
+footer ul{
+    padding-left: 0;
+    margin-bottom: 8px;
+}
+
+#button_xhtml{
+    background: url("../images/xml_button.png") no-repeat;
+    height: 13px;
+    width: 93px;
+    cursor: pointer;
+}
+#button_css{
+    background: url("../images/css_button.png") no-repeat;
+    height: 13px;
+    width: 82px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#designed_by{
+    font-weight: bold;
+    text-align: center;
+    color: #5d3608;
+    margin: 0;
+    font-size: 75%;
+}
+
+#designed_by p{
+    padding-top: 8px;
+    margin: 0;
+}
+
+#designed_by span{
+    color: #fff;
+    background: #c14c10;
+    padding: 2px 4px 3px 4px;
+}
