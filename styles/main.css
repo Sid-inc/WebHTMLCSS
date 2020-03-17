@@ -32,6 +32,8 @@ body{
     background: linear-gradient(#fff, #DCDCDC);
     border: 1px solid #00FFFF;
     box-shadow: 0 0 10px #00FFFF;
+    transition: 0.3s;
+    opacity: .9;
 }
 
 .templates__wrapper{
