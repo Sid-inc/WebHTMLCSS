@@ -1,5 +1,5 @@
 body{
-    background: url("../images/body_bg.png") repeat-x;
+    background: url("../images/backgroud_image.png") no-repeat top center, url("../images/top_background.png") no-repeat top center, url("../images/body_bg.png") repeat-x;
     background-color: #fff6ec;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,26 +7,30 @@ body{
     width: 100%;
 }
 
-#container{
-    background: url("../images/backgroud_image.png") no-repeat top center, url("../images/top_background.png") no-repeat;
-    width: 1000px;
+.container{
+    max-width: 750px;
     margin: 0 auto;
     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
 }
 
-#left{
-    width: 565px;
+.left{
     padding-top: 30px;
-    padding-left: 114px;
+    padding-left: 10px;
 }
 
-#right{
+.right{
     width: 178px;
+    height: 100%;
     border: 1px solid #e3d5c5;
     border-radius: 5px;
     background: #fff;
     margin-top: 38px;
     margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 130px;
 }
 
 h1{
@@ -103,7 +107,6 @@ section p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #34160c;
     font-size: 80%;
-    width: 550px;
 }
 
 section span{
