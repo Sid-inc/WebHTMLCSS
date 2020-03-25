@@ -22,7 +22,7 @@ body{
 }
 
 .right{
-    width: 178px;
+    min-width: 178px;
     height: 100%;
     border: 1px solid #e3d5c5;
     border-radius: 5px;
@@ -31,6 +31,10 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     padding-bottom: 130px;
+}
+
+input{
+    width: calc(100% - 10px);
 }
 
 h1{
@@ -150,9 +154,13 @@ section #button{
     margin-bottom: 2px;
 }
 
+
+.right__wrapper{
+    margin: 14px;
+}
+
 #search{
     height: 71px;
-    margin: 10px 9px 0 14px;
     background: #f16515;
     border-radius: 5px;
     padding: 7px 10px 10px 10px;
@@ -166,7 +174,6 @@ section #button{
 }
 
 #search input[type="text"]{
-    width: 126px;
     height: 19px;
     padding-left: 3px;
     padding-right: 3px;
@@ -196,7 +203,6 @@ h4{
     background: url("../images/news_logo.png") no-repeat left center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #381604;
-    margin-left: 14px;
     padding-left: 16px;
     margin-top: 10px;
 }
@@ -205,7 +211,6 @@ h5{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: url("../images/news_arrow.png") no-repeat left center, url("../images/news_break_line.png") no-repeat left bottom;
     font-size: 71%;
-    margin-left: 14px;
     margin-bottom: 7px;
     margin-top: 10px;
     padding-left: 16px;
@@ -223,7 +228,6 @@ h5{
 }
 
 #new p{
-    margin-left: 14px;
     margin-top: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 71%;
@@ -232,8 +236,6 @@ h5{
 
 #support{
     height: 78px;
-    width: 153px;
-    margin-left: 14px;
     background: #f8b11d;
     border-radius: 5px;
     cursor: pointer;
@@ -266,22 +268,25 @@ h5{
     font-weight: bold;
     background: #000;
     color: #fff;
-    margin-left: 14px;
     margin-bottom: 0;
-    width: 143px;
     border-radius: 5px 5px 0 0;
     padding-left: 10px;
     padding-top: 10px;
     height: 30px;
+    text-align: center;
+}
+
+.auth__wrapper{
+    
 }
 
 #auth form{
     background: #eaeaea;
     height: 150px;
-    width: 143px;
-    margin-left: 14px;
     margin-top: 0;
     padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 #auth form p{
@@ -290,30 +295,34 @@ h5{
     font-size: 60%;
     margin: 0px;
     padding-top: 3px;
-    width: 130px;
+}
+
+#auth form p:last-child{
+    text-align: right;
 }
 
 #auth form input[type="text"]{
-    width: 123px;
     height: 17px;
     padding-left: 3px;
     padding-right: 3px;
 }
 
 #auth form input[type="password"]{
-    width: 123px;
     height: 17px;
     padding-left: 3px;
     padding-right: 3px;
+    margin-bottom: 5px;
 }
 
 #auth span{
     color: #3f3f3f;
+    margin-bottom: 5px;
 }
 
 #auth form input[type="checkbox"]{
-    padding-left: 0px;
-    margin-left: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 20px;
 }
 
 #auth form a{
@@ -326,7 +335,6 @@ h5{
     width: 48px;
     margin-top: 5px;
     border: none;
-    margin-left: 85px;
 }
 
 footer{
@@ -433,4 +441,8 @@ footer ul{
         font-size: 70%;
     }
 
+    .right{
+        width: calc(100% - 20px);
+        padding-bottom: 10px;
+    }
 }
