@@ -66,4 +66,14 @@ body{
 
 .templates__title{
     color: #1F3F68;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 360px){
+    .templates__title{
+        font-size: 16px;
+    }
+    .templates__text{
+        font-size: 12px;
+    }
 }
