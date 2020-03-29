@@ -10,12 +10,18 @@ ul{
 
 .top_line{
     background: #C8A35F;
-    height: 25px;
+}
+
+.top_line__wrapper{
+    max-width: 1110px;
+    height: 45px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -40,26 +46,33 @@ ul{
 
 .menu_line{
     width: 100%;
-    height: 100px;
     background: #2F343A;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
-.menu_line > div{
+.menu_line__wrapper{
+    max-width: 1110px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_line__wrapper > div{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.menu_line div{
+.menu_line__wrapper div{
     padding-right: 10px;
 }
 
-.menu_line nav ul li{
+.menu_line__wrapper nav ul li{
     display: inline;
 }
 
@@ -101,17 +114,26 @@ ul{
 .title_line{
     height: 620px;
     background: url("../images/top_background.png") no-repeat center center;
+    margin: 0 auto;
+}
+
+.title_line__wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+    padding-top: 50px;
 }
 
 .top_title{
     border: 1px solid #C8A35F;
-    height: 243px;
-    width: 920px;
-    margin-top: 155px;
+    min-height: 243px;
+    max-width: 920px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1{
@@ -120,15 +142,13 @@ h1{
     letter-spacing: 0.05em;
     color: #fff;
     padding: 0;
-    height: 64px;
     font-size: 64px;
     margin-top: 35px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     font-weight: bold;
 }
 
 .top_title p{
-    margin-top: 0;
     text-align: center;
     color: #fff;
     font-size: 18px;
@@ -139,27 +159,25 @@ h1{
 }
 
 .slider{
-    /* height: 561px; */
-    background: #2F343A;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(270deg, #393F47, #393F47 39%, #2F343A 39%, #2F343A 61%, #393F47 61%, #393F47);
 }
 
 .slider-wrapper {
-    position: relative;
+    margin: 0 auto;
+    min-height: 561px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     max-width: 1110px;
+    padding-left: 10px;
 }
 
 .slider_description{
     /* background: #393F47; */
-    /* width: 36%; */
+    /*width: 36%;*/
+    min-width: 260px;
+    margin-bottom: 20px;
     z-index: 1;
 }
 
@@ -171,6 +189,7 @@ h2{
     position: relative;
     font-weight: bold;
     font-size: 40px;
+    word-break: break-all;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #fff;
@@ -217,39 +236,22 @@ h2:before {
 
 .slider_nav{
     /* background: #393F47; */
-    /* width: 36%; */
+    /*width: 52%;*/
+    margin-top: 20px;
+    margin-right: 5px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     z-index: 1;
 }
 
-.slider-wrapper:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(((-1*(100vw - 1110px)/2) + 10px));
-    height: 100%;
-    width: calc((100vw - (1100px/2))/2);
-    background-color: #393F47;
-    z-index: 0;
-}
-
-.slider-wrapper:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: calc(((-1*(100vw - 1110px)/2) + 10px));
-    height: 100%;
-    width: calc((100vw - (1100px/2))/2);
-    background-color: #393F47;
-    z-index: 0;
-}
-
 .slider_arrows{
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .slider_arrows a{
@@ -264,13 +266,13 @@ h2:before {
 .slider_arrows p:last-child a{
     padding-left: 98px;
     background: url("../images/Arrow_left.png") no-repeat left center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .slider_arrows p:first-child a{
     padding-right: 98px;
     background: url("../images/Arrow_right.png") no-repeat right center;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .slider_image{
@@ -283,17 +285,27 @@ h2:before {
 }
 
 .services{
-    height: 744px;
     background: #2F343A;
+}
+
+.services__wrapper{
+    min-height: 744px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 10px;
 }
 
 .services_list{
-    height: 504px;
-    width: 1108px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.services_list h2{
+    margin-top: 0;
 }
 
 .services_buttons{
@@ -381,28 +393,29 @@ h2:before {
 }
 
 .about{
-    height: 482px;
-    background: #2F343A;
+    background: linear-gradient(270deg, #2F343A, #2F343A 39%, #393F47 39%, #393F47 61%, #2F343A 61%, #2F343A);
+}
+
+.about__wrapper{
+    margin: 0 auto;
+    min-height: 482px;
+    max-width: 1110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .about_description_container{
-    background: #393F47;
     width: 36%;
 }
 
 .about_images_container{
-    background: #393F47;
-    width: 36%; 
+    width: 55%; 
 }
 
 .about_description{
-    width: 445px;
-    padding-top: 45px;
-    margin: 0 0 0 auto;
-    padding-left: 140px;
 }
 
 .about_description p{
@@ -411,14 +424,12 @@ h2:before {
 }
 
 .about_images{
-    width: 600px;
-    height: 320px;
+    max-width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: start;
     flex-wrap: wrap;
     margin-top: 80px;
-    margin-left: -230px;
 }
 
 .about_images div{
@@ -462,7 +473,7 @@ h2:before {
 
 .separator{
     height: 120px;
-    background: #393F47;
+    background: #2F343A;
 }
 
 
@@ -551,4 +562,18 @@ footer .development a{
     font-size: 14px;
     text-align: right;
     color: #2F343A;
+}
+
+@media screen and (max-width: 950px){
+    .slider_nav{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .slider-wrapper{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 }
