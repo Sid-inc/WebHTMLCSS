@@ -311,7 +311,8 @@ h2:before {
 .services_buttons{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
