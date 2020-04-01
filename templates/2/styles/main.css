@@ -566,6 +566,48 @@ footer .development a{
     color: #2F343A;
 }
 
+
+#toggle, .toggle-container{
+    display: none;
+}
+
+.button-toggle, .button-toggle:before, .button-toggle:after{
+    position: absolute;
+    display: block;
+    height: 2px;
+    top: 50%;
+    width: 100%;
+    background: #fff;
+}
+
+.button-toggle:before, .button-toggle:after{
+    content: "";
+}
+
+.button-toggle:before{
+    transform: translateY(-7px);
+    transition: 0.5s, opacity 1s;
+}
+
+.button-toggle:after{
+    transform: translateY(5px);
+    transition: 0.5s, opacity 1s;
+}
+
+#toggle:checked ~ .toggle-container .button-toggle:before{
+    transform: rotate(25deg);
+    transition: 0.5s, opacity 1s;
+}
+
+#toggle:checked ~ .toggle-container .button-toggle:after{
+    transform: rotate(-25deg);
+    transition: 0.5s, opacity 1s;
+}
+
+#toggle:checked ~ .toggle-container .button-toggle{
+    background: none;
+}
+
 @media screen and (max-width: 992px){
     .slider_nav{
         width: 300px;
@@ -592,5 +634,88 @@ footer .development a{
 }
 
 @media screen and (max-width: 576px){
+    .main_menu{
+        display: none;
+        position: absolute;
+        overflow: hidden;
+    }
 
+    .toggle-container{
+        display: block;
+        position: relative;
+        height: 16px;
+        width: 24px;
+        cursor: pointer;
+    }
+
+    .adaptive_menu__wrapper{
+        position: relative;
+    }
+
+    #toggle:checked ~ .main_menu{
+        display: block;
+        position: absolute;
+        margin-left: -195px;
+        margin-top: 155px;
+    }
+
+    #toggle:checked ~ .main_menu a{
+        display: block;
+        box-sizing: border-box;
+        padding: 25px;
+        font-size: 14px;
+        border: 1px solid  rgb(95, 104, 116);
+        background-color: rgb(47, 52, 58);
+    }
+
+    h1{
+        font-size: 44px;
+    }
+
+    .top_title p{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .slider_image{
+        height: 73px;
+        width: 80px;
+    }
+
+    .slider_nav{
+        width: 310px;
+    }
+
+    .slider_arrows a{
+        font-size: 12px;
+    }
+    
+    .slider_arrows p{
+        margin: 5px;
+    }
+
+    .placeholder{
+        margin-left: 15px;
+    }
+
+    .about__wrapper{
+        flex-direction: column;
+    }
+
+    .about_description_container {
+        width: 100%;
+    }
+    
+    footer .mail, footer .email a, footer .phones a, footer .development a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .footer{
+        flex-direction: column;
+    }
 }
