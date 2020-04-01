@@ -494,6 +494,8 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .logo_and_addr{
@@ -564,7 +566,7 @@ footer .development a{
     color: #2F343A;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 992px){
     .slider_nav{
         width: 300px;
     }
@@ -576,4 +578,19 @@ footer .development a{
         flex-direction: column-reverse;
         justify-content: center;
     }
+    .menu_line nav a{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    footer .logo_text {
+        margin-right: 5px;
+    }
+
+    footer .phones a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
 }
