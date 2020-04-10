@@ -409,13 +409,13 @@ h2:before {
 }
 
 .about_description_container{
-    width: 36%;
+    max-width: 350px;
 }
-
+/*
 .about_images_container{
     width: 55%; 
 }
-
+*/
 .about_description{
 }
 
@@ -609,9 +609,23 @@ footer .development a{
     background: none;
 }
 
+@media screen and (max-width: 1200px){
+    .about_description_container{
+        max-width: 350px;
+    }
+}
+
 @media screen and (max-width: 992px){
     .slider_nav{
         width: 300px;
+    }
+
+    .about_description_container{
+        max-width: 325px;
+    }
+
+    .about_images_container{
+        max-width: 404px;
     }
 
 }
@@ -631,6 +645,30 @@ footer .development a{
 
     footer .phones a{
         font-size: 12px;
+    }
+
+    .about__wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services_list h2{
+        display: block;
+        margin: 0 auto;
+        max-width: 360px;
+        padding-bottom: 20px;
+    }
+
+    .about_description{
+        max-width: 360px;
+    }
+
+    .description_continer{
+        max-width: 360px;
+    }
+
+    .description_continer h2:before{
+        display: none;
     }
 }
 

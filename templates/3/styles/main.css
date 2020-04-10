@@ -26,8 +26,7 @@ header {
 }
 
 .top-line__nav{
-    margin: 0 auto;
-    max-width: 1110px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -91,7 +90,7 @@ header {
 }
 
 .presentation .presentation__descryption{
-    width: 445px;
+    max-width: 445px;
     font-family: "Open Sans";
     font-weight: 200;
     font-size: 16px;
@@ -210,8 +209,8 @@ header {
 }
 
 .projects-list__item{
-    width: 540px;
-    height: 400px;
+    max-width: 540px;
+    max-height: 400px;
     margin: 5px;
     position: relative;
 }
@@ -228,9 +227,10 @@ header {
     min-height: 110px;
     max-height: 140px;
     background: #fff;
-    margin-top: -145px;
-    margin-left: 255px;
     padding-left: 25px;
+    bottom: 30px;
+    right: 30px;
+    overflow: hidden;
 }
 
 .projects-list__description h3{
@@ -337,6 +337,7 @@ header {
     line-height: 25px;
     color: #343434;
     max-width: 350px;
+    margin-right: 30px;
 }
 
 .rent__slider{
@@ -382,12 +383,12 @@ header {
     margin-top: 30px; 
 }
 
-.slider-wrapper .rent__description {
+.slider-wrapper .rent-slider__description {
     margin-left: 30px;
 }
 
 
-.rent__description h5{
+.rent-slider__description h5{
     font-family: Oswald;
     font-stretch: condensed;
     font-size: 16px;
@@ -398,8 +399,8 @@ header {
     margin-left: -20px;
 }
 
-.rent__description ul li{
-    width: 290px;
+.rent-slider__description ul li{
+    max-width: 290px;
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 14px;
@@ -570,6 +571,8 @@ header {
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .footer-contacts__email a{
@@ -648,4 +651,83 @@ header {
     color: #FFFFFF;
     text-decoration: none;
     opacity: .6;
+}
+
+@media screen  and (max-width: 992px){
+    .top-line__nav{
+        justify-content: flex-end;
+    }
+}
+
+@media screen  and (max-width: 768px){
+    .rent__slider{
+        padding: 10px;
+    }
+    
+    .menu{
+        max-width: 60%;
+    }
+
+}
+
+@media screen  and (max-width: 576px){
+
+    .projects-list__image img{
+        width: 250px;
+        height: 185px;
+    }
+    
+    .projects__list{
+        flex-direction: column;
+    }
+
+    .projects-list__description{
+        bottom: 9px;
+        left: 100px;
+        border: solid 0.2px #000000;
+        width: 175px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
+    .projects-list__description h3{
+        font-size: 18px;
+    }
+
+    .projects-list__description p{
+        font-size: 10px;
+    }
+
+    .projects-header__title h2, .catalog__title h2, .rent__title h2, .news__title h2 {
+        font-size: 26px;
+    }
+
+    .rent__description{
+        margin-right: 0;
+    }
+
+    .slider-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .last{
+        flex-direction: column-reverse;
+    }
+
+    .news__title .button{
+        width: 100px;
+        height: 30px;
+        padding-left: 15px;
+    }
+
+    .decor-line{
+        margin-right: 5px;
+    }
+    .last img{
+     /*   width: 128px;
+        height: 121px; */
+    }
 }
