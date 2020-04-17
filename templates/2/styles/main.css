@@ -411,13 +411,6 @@ h2:before {
 .about_description_container{
     max-width: 350px;
 }
-/*
-.about_images_container{
-    width: 55%; 
-}
-*/
-.about_description{
-}
 
 .about_description p{
     font-size: 16px;
