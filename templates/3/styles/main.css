@@ -546,7 +546,6 @@ header {
 }
 
 .last .news__item-description{
-    width: 255px;
     height: 242px;
     display: flex;
     flex-direction: column;
@@ -723,10 +722,6 @@ header {
         min-width: 700px;
     }
 
-    .last .news__item-description{
-        width: 100%;
-    }
-
     .news__item{
         flex-direction: row-reverse;
         justify-content: flex-end;
@@ -754,8 +749,17 @@ header {
         align-items: flex-start;
     }
 
+    .last{
+        max-width: 100%;
+    }
+
     .news__item{
-        min-width: 450px;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .footer__menu ul{
+        width: 100%;
     }
 
 }
@@ -780,6 +784,10 @@ header {
 
     .button {
         font-size: 12px;
+    }
+    
+    .presentation__button .button{
+        width: 140px;
     }
 
     .projects-list__description h3{
@@ -813,12 +821,7 @@ header {
         margin-right: 5px;
     }
     
-    .menu{
-        display: none;
-        position: absolute;
-        overflow: hidden;
-    }
-
+    
     .toggle-container{
         display: block;
         position: relative;
@@ -826,30 +829,41 @@ header {
         width: 24px;
         cursor: pointer;
     }
-
+    
     .top-line__nav{
         padding-right: 10px;
     }
-
+    
     .adaptive_menu__wrapper{
         position: relative;
     }
 
-    #toggle:checked ~ .menu{
-        display: block;
+    .menu{
+        /*display: none;*/
         position: absolute;
+        overflow: hidden;
         top: 30px;
         right: 10px;
     }
 
-    #toggle:checked ~ .menu a{
+    .menu .menu__item{
+        height: 0;
+        width: 0;
+        font-size: 0;
         display: block;
         box-sizing: border-box;
-        padding: 15px;
-        font-size: 14px;
-        width: 130px;
+        font-weight: 900;
         border: .1px solid  #fff;
         background-color: rgba(0, 91, 193, 0.6);
+        transition: 0.5s;
+    }
+    
+    #toggle:checked ~ .menu a{
+        width: 130px;
+        font-size: 14px;
+        height: auto;
+        padding: 15px;
+        transition: 0.5s;
     }
 
     #toggle:checked ~ .menu a:hover{
@@ -867,4 +881,33 @@ header {
         height: 100%;
     }
 
+    .footer__contacts{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-contacts__address{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .footer__menu ul li{
+        width: 140px;
+    }
+}
+
+@media screen  and (max-width: 320px){
+    .footer__menu ul li{
+        width: 110px;
+    }
+
+    .catalog-list__image img{
+        width: 300px;
+        height: 246px;
+    }
+
+    .catalog-list__description{
+        width: 205px;
+    }
 }
