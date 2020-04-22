@@ -162,8 +162,8 @@ header {
 .wrapper{
     max-width: 1110px;
     margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .projects__header{
@@ -172,7 +172,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .projects-header__title h2, 
@@ -580,8 +580,8 @@ header {
 .footer__wrapper{
     max-width: 1110px;
     margin: 0 auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .footer__contacts{
@@ -714,7 +714,6 @@ header {
     }
 
     .rent{
-        max-width: 700px;
         margin: 0 auto;
     }
 
@@ -731,7 +730,8 @@ header {
     .news__item-image {
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 210px;
+        flex-direction: column;
+        max-width: 128px;
         margin-right: 20px;
     }
 
@@ -842,6 +842,7 @@ header {
         /*display: none;*/
         position: absolute;
         overflow: hidden;
+        border: none;
         top: 30px;
         right: 10px;
     }
