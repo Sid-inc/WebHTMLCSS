@@ -388,13 +388,15 @@ ul{
 
 @media screen and (max-width: 576px){
     .what_we_do__item{
-        padding-left: 15px;
         padding-right: 15px;
-        width: 220px;
+        padding-left: 15px;
+        width: 100%;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 
     .what_we_do__image{
-        left: 5px;
+        left: 15%;
     }
 
 }
@@ -537,4 +539,113 @@ ul{
     .projects__title{
         margin-right: 10px;
     }
+}
+
+@media screen and (max-width: 576px){
+    .projects__item{
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .projects__item{
+        max-width: 280px;
+        min-height: 279px;
+        overflow: hidden;
+    }
+    
+    .projects__item img{
+        width: 280px;
+        height: 279px;
+        object-fit: cover;
+    }
+
+    .project__name h3{
+        font-size: 22px;
+    }
+
+    .project__name p{
+        font-size: 14px;
+    }
+
+    .projects__title{
+        font-size: 22px;
+    }
+
+    .projects__description{
+        font-size: 12px;
+    }
+}
+
+.clients{
+    background: #5A98D0;
+    border-radius: 200px 0px 0px 0px;
+    color: #fff;
+}
+
+.cliens__wrapper{
+    padding-top: 96px;
+    margin: 0 auto;
+    max-width: 944px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.cliens__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 111px;
+}
+
+.clients__title{
+    display: block;
+    margin-right: 93px;
+    width: 400px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+}
+
+.clients__description{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.clients__list{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    /*padding-bottom: 125px; */
+    z-index: 100;
+}
+
+.clients__list::before{
+    content: "";
+    margin-top: -1px;
+    position: absolute;
+    width: calc(100% - 9px);
+    height: calc(100% - 9px);
+    border: solid 5px #5A98D0;
+}
+
+.clients__item{
+    display: block;
+    /*width: 235px;*/
+    height: 126px;
+    flex-basis: calc(100% / 3);
+    text-align: center;
+    line-height: 128px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 1px #fff;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    z-index: 10;
+    cursor: pointer;
 }
