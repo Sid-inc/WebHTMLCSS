@@ -13,12 +13,13 @@ body{
     font-family: Gilroy;
     color: #1F3F68;
     letter-spacing: 0.05em;
+    overflow-x: hidden;
 }
 
 .page-header{
     max-width: 1366px;
     max-height: 768px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 70.84%, rgba(152, 195, 232, 0.2) 80.12%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 70.84%, rgba(152, 195, 232, 0.2) 80.12%), url("../images/illustration.svg") no-repeat right 23px top 133px;
 }
 
 ul{
@@ -32,7 +33,7 @@ ul{
 .top-line__container{
     height: 100%;
     margin: 0 auto;
-    max-width: 1135px;
+    max-width: 1200px;
     padding-left: 35px;
     padding-right: 35px;
     display: flex;
@@ -140,25 +141,17 @@ ul{
     background: none;
 }
 .banner{
-    max-width: 1135px;
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.banner__wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-right: 35px;
-    margin-left: 35px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 190px;
 }
 
 
 .banner__description{
-    max-width: 48%;
-    padding-bottom: 25px;
-    z-index: 10;
+    max-width: 510px;
+    padding-top: 56px;
 }
 
 .banner__header{
@@ -167,7 +160,6 @@ ul{
     line-height: 74px;
     letter-spacing: 0.04em;
     color: #1F3F68;
-    margin-top: 70px;
     margin-bottom: 32px;
 }
 
@@ -178,17 +170,6 @@ ul{
     color: #1F3F68;
     opacity: 0.6;
     max-width: 425px;
-}
-
-.banner__image{
-    margin-left: -75px;
-    max-width: 60%;
-    
-}
-
-.banner__image img{
-    max-width: 100%;
-    z-index: -1;
 }
 
 .button {
@@ -211,6 +192,13 @@ ul{
     padding-top: 15px;
     margin-top: 71px;
 }
+
+@media screen and (max-width: 1200px) {
+    .page-header{
+        background-size: auto, 50%;
+    }
+}
+
 
 @media screen and (max-width: 992px){
     .banner{
@@ -251,6 +239,12 @@ ul{
     }
 }
 
+@media screen and (max-width: 576px) {
+    .page-header{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 70.84%, rgba(152, 195, 232, 0.2) 80.12%);
+    }
+}
+
 @media screen and (max-width: 320px){
     .banner__header, .banner__text{
         text-align: center;
@@ -263,7 +257,9 @@ ul{
 .what_we_do{
     padding-right: 35px;
     padding-left: 35px;
+    margin: 0 auto;
     margin-top: 192px;
+    max-width: 940px;
 }
 
 .what_we_do__wrapper{
@@ -273,9 +269,7 @@ ul{
     flex-wrap: wrap-reverse;
     align-items: start;
     justify-content: center;
-    max-width: 940px;
     height: 1255px;
-    margin: 0 auto;
 }
 
 .what_we_do__description{
@@ -371,12 +365,11 @@ ul{
     .what_we_do__wrapper{
         height: auto;
         align-items: center;
+        padding-top: 200px;
     }
 
     .what_we_do__description{
-        position: static;
         max-width: 500px;
-        margin-bottom: 35px;
         font-size: 32px;
     }    
 
@@ -388,10 +381,12 @@ ul{
 
 @media screen and (max-width: 576px){
     .what_we_do__item{
-        padding-right: 0px;
+        box-sizing: border-box;
+        padding-right: 15px;
         padding-left: 15px;
         width: 100%;
-        margin-left: 35px;
+        margin-left: 0;
+        margin-top: 50px;
     }
 
     .what_we_do__image{
@@ -690,7 +685,7 @@ ul{
         border-right: none;
     }
     
-    .clients__block:nth-child(n+7){
+    .clients__block:nth-child(n+7) {
         border-bottom: none;
     } 
 }
