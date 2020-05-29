@@ -175,7 +175,6 @@ ul {
 .button {
     display: block;
     width: 220px;
-    height: 41px;
     background: #5A98D0;
     border-radius: 10px;
     font-family: Gilroy;
@@ -185,11 +184,15 @@ ul {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     text-decoration: none;
+    border: none;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.banner__button .button {
+.banner__button{
     box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-    padding-top: 15px;
     margin-top: 71px;
 }
 
@@ -393,6 +396,14 @@ ul {
         left: 15%;
     }
 
+    .what_we_do__description {
+        position: static;
+        margin-bottom: 150px;
+    }
+
+    .what_we_do__wrapper {
+        padding-top: 0;
+    }
 }
 
 .projects {
@@ -569,6 +580,16 @@ ul {
     }
 }
 
+@media screen and (max-width: 396px) {
+    .projects__item {
+        max-width: 100%;
+    }
+    
+    .projects__item img {
+        width: 100%;
+    }
+}
+
 .clients {
     background: #5A98D0;
     border-radius: 200px 0px 0px 0px;
@@ -663,6 +684,11 @@ ul {
         margin-right: 10px;
     }
 
+    .clients {
+        border-radius: 100px 0px 0px 0px;
+    }
+}    
+
 @media screen and (max-width: 768px) {
     .clients__block {
         flex-basis: calc((100% / 3) - 3px);
@@ -710,6 +736,113 @@ ul {
     .clients__description {
         font-size: 12px;
     }
+}
 
+.footer {
+    background: linear-gradient(90deg, #316099 0%, #316099 30%, #5A98D0 30%, #5A98D0 100%);
+    color: #fff;
+}
 
+.footer__wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 940px;
+    border-radius: 0px 200px 0px 0px;
+    background: #316099;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 90px;
+}
+
+.feed-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 860px;
+    margin-bottom: 95px;
+}
+
+.feed-back__title {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    max-width: 330px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+}
+
+.feed-back__text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    max-width: 460px;
+}
+
+.footer__break-line {
+    position: absolute;
+    width: 150%;
+    top: 390px;
+    right: 120px;
+    opacity: 0.4;
+}
+
+.contacts {
+    padding-top: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contacts__bases {
+    max-width: 310px;
+    margin-right: 100px;
+}
+
+.contacts__title {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    padding-left: 64px;
+    margin-bottom: 33px;
+    background: url("../images/Footer_logo.svg") no-repeat left center;
+}
+
+.contacts__list {
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+.contacts__item::first-letter{
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.contacts__item {
+    text-indent: -35px;
+    padding-bottom: 24px;
+}
+
+.contacts__link {
+    display: inline;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #fff;  
+}
+
+.contacts__link:hover {
+    text-decoration: underline;
+}
+
+.about-us__title, .follow-us__title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
 }

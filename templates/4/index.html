@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="" />
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <title>Site</title>
@@ -36,9 +37,7 @@
                 <div class="banner__description">
                     <h1 class="banner__header">New Automation<br> Tool for Your Home</h1>
                     <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</p>
-                    <div class="banner__button">
-                        <a href="#" class="button"><span>See Our Project</span></a>
-                    </div>
+                    <button class="banner__button button"><span>See Our Project</span></button>
                 </div>
             </div>
        </div>
@@ -80,32 +79,26 @@
                     </p>
                 </header>
                 <div class="projects__list">
-                    <figure>
-                        <div class="projects__item large">
-                            <img class="projects__image" src="images/Mask_Group.png" alt="Mask Group">
-                            <figcaption class="project__name">
-                                <h3>Smart Home Installation</h3>
-                                <p>In Muarakana Housing Estate</p>
-                            </figcaption>
-                        </div>
+                    <figure class="projects__item large">
+                        <img class="projects__image" src="images/Mask_Group.png" alt="Mask Group">
+                        <figcaption class="project__name">
+                            <h3>Smart Home Installation</h3>
+                            <p>In Muarakana Housing Estate</p>
+                        </figcaption>
                     </figure>
-                    <figure>
-                        <div class="projects__item">
-                            <img class="projects__image" src="images/sparklite_app.png" alt="Sparklite Application">
-                            <figcaption class="project__name">
-                                <h3>Sparklite App</h3>
-                                <p>Marketplace</p>
-                            </figcaption>
-                        </div>
+                    <figure class="projects__item">
+                        <img class="projects__image" src="images/sparklite_app.png" alt="Sparklite Application">
+                        <figcaption class="project__name">
+                            <h3>Sparklite App</h3>
+                            <p>Marketplace</p>
+                        </figcaption>
                     </figure>
-                    <figure>
-                        <div class="projects__item">
-                            <img class="projects__image" src="images/car_rep_app.png" alt="Car repair Applivation">
-                            <figcaption class="project__name">
-                                <h3>Car-Rapetition App</h3>
-                                <p>Board</p>
-                            </figcaption>
-                        </div>
+                    <figure class="projects__item">
+                        <img class="projects__image" src="images/car_rep_app.png" alt="Car repair Applivation">
+                        <figcaption class="project__name">
+                            <h3>Car-Rapetition App</h3>
+                            <p>Board</p>
+                        </figcaption>
                     </figure>
                 </div>
             </div>
@@ -121,36 +114,74 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
             </header>
-                <ul class="clients__list">
-                    <li class="clients__block">
-                        <a href="#" class="clients__item">Logo client 1</a>
-                    </li>
-                    <li class="clients__block">
-                        <a href="#" class="clients__item">Logo client 2</a>
-                    </li>
-                    <li class="clients__block">
-                        <a href="#" class="clients__item">Logo client 3</a>
-                    </li>
-                    <li class="clients__block">
-                        <a href="#" class="clients__item">Logo client 4</a>
-                    </li>
-                    <li class="clients__block">
-                        <a href="#" class="clients__item">Logo client 5</a>
-                    </li>
-                    <li class="clients__block">
-                        <a href="#" class="clients__item">Logo client 6</a>
-                    </li>
-                    <li class="clients__block">
-                        <a href="#" class="clients__item">Logo client 7</a>
-                    </li>
-                    <li class="clients__block block-more">
-                        <a href="#" class="clients__item">More Client</a>
-                    </li>
-                </ul>
+            <ul class="clients__list">
+                <li class="clients__block">
+                    <a href="#" class="clients__item">Logo client 1</a>
+                </li>
+                <li class="clients__block">
+                    <a href="#" class="clients__item">Logo client 2</a>
+                </li>
+                <li class="clients__block">
+                    <a href="#" class="clients__item">Logo client 3</a>
+                </li>
+                <li class="clients__block">
+                    <a href="#" class="clients__item">Logo client 4</a>
+                </li>
+                <li class="clients__block">
+                    <a href="#" class="clients__item">Logo client 5</a>
+                </li>
+                <li class="clients__block">
+                    <a href="#" class="clients__item">Logo client 6</a>
+                </li>
+                <li class="clients__block">
+                    <a href="#" class="clients__item">Logo client 7</a>
+                </li>
+                <li class="clients__block block-more">
+                    <a href="#" class="clients__item">More Client</a>
+                </li>
+            </ul>
         </div>
-   </aside>
-<footer>
-
-</footer>
+    </aside>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="feed-back">
+                <div class="feed-back__description">
+                    <h2 class="feed-back__title">Intersted to work with our team?</h2>
+                    <p class="feed-back__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <button class="feed-back__button button">Let’s Talk</button>
+            </div>
+            <hr class="footer__break-line">
+            <div class="contacts">
+                <div class="contacts__bases">
+                    <h3 class="contacts__title">Afrianska</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">A. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li class="contacts__item">T. <a class="contacts__link" href="tel:+62-812-7313-4321">+62-812-7313-4321</a></li>
+                        <li class="contacts__item">E. <a class="contacts__link" href="email:hello.afrian@gmail.com">hello.afrian@gmail.com</a></li>
+                    </ul>    
+                </div>
+                <div class="about-us">
+                    <h4 class="about-us__title">About US</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">How It Work With Us</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <h4 class="follow-us__title">Follow US</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">2019 &copy; Afrianska. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
