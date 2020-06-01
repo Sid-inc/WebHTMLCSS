@@ -741,6 +741,8 @@ ul {
 .footer {
     background: linear-gradient(90deg, #316099 0%, #316099 30%, #5A98D0 30%, #5A98D0 100%);
     color: #fff;
+    padding-right: 35px;
+    padding-left: 35px;
 }
 
 .footer__wrapper {
@@ -749,8 +751,8 @@ ul {
     max-width: 940px;
     border-radius: 0px 200px 0px 0px;
     background: #316099;
-    padding-right: 35px;
-    padding-left: 35px;
+  /*  padding-right: 35px;
+    padding-left: 35px; */
     padding-top: 90px;
 }
 
@@ -779,13 +781,18 @@ ul {
     color: #FFFFFF;
     opacity: 0.6;
     max-width: 460px;
+    padding-right: 10px;
+}
+
+.feed-back__button{
+    margin-right: 25px;
 }
 
 .footer__break-line {
     position: absolute;
     width: 150%;
     top: 390px;
-    right: 120px;
+    right: 105px;
     opacity: 0.4;
 }
 
@@ -795,6 +802,7 @@ ul {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .contacts__bases {
@@ -828,8 +836,7 @@ ul {
     padding-bottom: 24px;
 }
 
-.contacts__link {
-    display: inline;
+.contacts__link, .about-us__link, .follow-us__link {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.05em;
@@ -837,12 +844,53 @@ ul {
     color: #fff;  
 }
 
-.contacts__link:hover {
+.contacts__link:hover, .about-us__link:hover, .follow-us__link:hover {
     text-decoration: underline;
+}
+
+.about-us {
+    margin-right: 77px;
 }
 
 .about-us__title, .follow-us__title {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.05em;
+    margin-bottom: 32px;
+}
+
+.about-us__item, .follow-us__item {
+    margin-bottom: 16px;
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.4;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+@media screen and (max-width: 992px) {
+    .footer__wrapper  {
+        border-radius: 0px 100px 0px 0px;
+    }
+
+    .footer__break-line {
+        top: 440px;
+        right: 25px;
+    }
+}    
+
+@media screen and (max-width: 576px) {
+    .feed-back__title {
+        font-size: 22px;
+    }
+    .feed-back__text, .contacts__link, .about-us__link, .follow-us__link, .copyright{
+        font-size: 12px;
+    }
+    .feed-back {
+        flex-direction: column;
+    }
 }
