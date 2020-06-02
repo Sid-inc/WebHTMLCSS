@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <title>Site</title>
+</head>
+<body>
+   <header class="page-header blog-header">
+       <div class="top-line">
+            <div class="top-line__container">
+                <div class="top-line__logo">
+                    <img src="images/Logo.svg" alt="Logo">
+                </div>
+                <div class="top-line__menu">
+                    <div class="top-line__menu_container">
+                        <input id="toggle" type="checkbox">
+                        <label class="toggle-container" for="toggle">
+                            <span class="button-toggle"></span>
+                        </label>
+                        <nav class="nav">
+                            <ul>
+                                <li class="nav__item"><a href="index.html"><span>Main Page</span></a></li>
+                                <li class="nav__item"><a href="blog.html"><span>Blog</span></a></li>
+                                <li class="nav__item"><a href="contuct_us.html"><span>Contact Us</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="blog">
+           <div class="blog__wrapper">
+                <h1 class="blog__title">Blog Afrianska</h1>
+                <p class="blog__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="search">
+            <label class="search__field">
+                <input class="search__input" type="text" name="search" placeholder=" ">
+                <span class="search__placeholder">Search Article</span>
+            </label>
+        </div>
+        <section class="popular-articles">
+            <span class="popular-articles__label">Popular</span>
+            <article class="popular-articles__item-main">
+                <div class="popular-articles__description">
+                    <h2 class="popular-articles__title">Feugiat sodales at nullam tellus.</h2>
+                    <p class="popular-articles__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.
+                    </p>
+                    <div class="popular-articles__meta">
+                        <p class="popular-articles__author">Samatha Leuthex</p>
+                        <p class="popular-articles__date" ><time datetime="2020-05-05">May 5</time>, 3 min read</p>
+                        <img class="popular-articles__bookmark" src="images/bookmark.svg" alt="">
+                        <img class="popular-articles__share" src="images/share.svg" alt="">
+                    </div>
+                </div>
+                <div class="popular-articles__image">
+                    <img src="images/articles/1st-article.png" alt="">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="feed-back">
+                <div class="feed-back__description">
+                    <h2 class="feed-back__title">Intersted to work with our team?</h2>
+                    <p class="feed-back__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <button class="feed-back__button button">Let’s Talk</button>
+            </div>
+            <hr class="footer__break-line">
+            <div class="contacts">
+                <div class="contacts__bases">
+                    <h3 class="contacts__title">Afrianska</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">A. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li class="contacts__item">T. <a class="contacts__link" href="tel:+62-812-7313-4321">+62-812-7313-4321</a></li>
+                        <li class="contacts__item">E. <a class="contacts__link" href="email:hello.afrian@gmail.com">hello.afrian@gmail.com</a></li>
+                    </ul>    
+                </div>
+                <div class="about-us">
+                    <h4 class="about-us__title">About US</h4>
+                    <ul>
+                        <li class="about-us__item"><a class="about-us__link" href="#">About</a></li>
+                        <li class="about-us__item"><a class="about-us__link" href="#">What We Do</a></li>
+                        <li class="about-us__item"><a class="about-us__link" href="#">Project</a></li>
+                        <li class="about-us__item"><a class="about-us__link" href="#">How It Work With Us</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <h4 class="follow-us__title">Follow US</h4>
+                    <ul>
+                        <li class="follow-us__item"><a class="follow-us__link" href="#">Instagram</a></li>
+                        <li class="follow-us__item"><a class="follow-us__link" href="#">Facebook</a></li>
+                        <li class="follow-us__item"><a class="follow-us__link" href="#">LinkedIn</a></li>
+                        <li class="follow-us__item"><a class="follow-us__link" href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">2019 &copy; Afrianska. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -739,10 +739,14 @@ ul {
 }
 
 .footer {
-    background: linear-gradient(90deg, #316099 0%, #316099 30%, #5A98D0 30%, #5A98D0 100%);
     color: #fff;
     padding-right: 35px;
     padding-left: 35px;
+    background: linear-gradient(90deg, #316099 0%, #316099 30%, #ffffff 30%, #ffffff 100%);
+}
+
+.main_page-footer-background{
+    background: linear-gradient(90deg, #316099 0%, #316099 30%, #5A98D0 30%, #5A98D0 100%);
 }
 
 .footer__wrapper {
@@ -751,8 +755,6 @@ ul {
     max-width: 940px;
     border-radius: 0px 200px 0px 0px;
     background: #316099;
-  /*  padding-right: 35px;
-    padding-left: 35px; */
     padding-top: 90px;
 }
 
@@ -893,4 +895,127 @@ ul {
     .feed-back {
         flex-direction: column;
     }
+}
+
+.blog-header {
+    background: #fff;
+}
+
+.blog {
+    overflow: hidden;
+    max-width: 1366px;
+    height: 250px;
+    background: url("../images/blog_background.png") no-repeat center center;
+    text-align: center;
+    color: #fff;
+}
+
+.blog__wrapper {
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+.blog__title {
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.blog__description{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.search {
+    margin: 0 auto;
+    max-width: 940px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.search__field {
+    position: relative;
+}
+
+
+.search__input {
+    width: 100%;
+    background: url("../images/search.png") no-repeat left 27px center, #F4F4F4;
+    border: none;
+    border-radius: 10px;
+    height: 56px;
+    padding-left: 72px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1F3F68;
+    outline: none;
+}
+
+.search__placeholder {
+    position: absolute;
+    top: 0;
+    left: 72px;
+    opacity: .6;
+}
+
+.search__input:focus {
+    box-shadow: 0 0 3px #1F3F68;
+}
+
+.search__input:focus + .search__placeholder {
+    display: none;
+}
+
+.popular-articles {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.popular-articles__label {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: #356EAD;
+    opacity: 0.8;
+}
+
+.popular-articles__item-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.popular-articles__description {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.popular-articles__title {
+    font-family: Galien;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+
+.popular-articles__text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #000;
+    opacity: 0.6;
+}
+
+.popular-articles__meta{
 }
