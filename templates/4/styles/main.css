@@ -908,6 +908,8 @@ ul {
     background: url("../images/blog_background.png") no-repeat center center;
     text-align: center;
     color: #fff;
+    padding-right: 35px;
+    padding-left: 35px;
 }
 
 .blog__wrapper {
@@ -935,6 +937,8 @@ ul {
     max-width: 940px;
     margin-top: 56px;
     margin-bottom: 56px;
+    padding-right: 35px;
+    padding-left: 35px;
 }
 
 .search__field {
@@ -973,6 +977,8 @@ ul {
 .popular-articles {
     margin: 0 auto;
     max-width: 940px;
+    padding-right: 35px;
+    padding-left: 35px;
 }
 
 .popular-articles__label {
