@@ -893,7 +893,7 @@ ul {
 .blog {
     overflow: hidden;
     height: 250px;
-    background: url("../images/blog_background.png") no-repeat center center;
+    background: url("../images/Blog_background.png") no-repeat center center;
     text-align: center;
     color: #fff;
     padding-right: 35px;
@@ -1300,5 +1300,51 @@ ul {
 @media screen and (max-width: 320px) {
     .articles__image img {
         max-width: 220px;
+    }
+}
+
+.contact-us-header {
+    background: #fff;
+}
+
+.contact-us {
+    overflow: hidden;
+    height: 250px;
+    background: url("../images/Blog_background.png") no-repeat center center;
+    text-align: center;
+    color: #fff;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.contact-us__wrapper {
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+.contact-us__title {
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.contact-us__description{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .contact-us__description{
+        font-size: 16px;
+        line-height: 20px;
     }
 }
