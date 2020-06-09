@@ -1348,3 +1348,184 @@ ul {
         line-height: 20px;
     }
 }
+
+.contact-info__wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-top: 57px;
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contact-info {
+    flex-basis: 32%;
+}
+
+.feedback__wrapper {
+    flex-basis: calc(57% - 112px);
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 56px;
+}
+
+.feedback__title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.conacts-info__image {
+    margin-left: 11px;
+    max-width: 301px;
+    max-height: 181px;
+    padding-top: 68px;
+}
+
+.feedback__name-label, .feedback__email-label, .feedback__message-label{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.feedback__name-input, .feedback__email-input, .feedback__message-field {
+    height: 72px;
+    width: 100%;
+    opacity: 0.6;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 42px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 32px;
+    outline: none;
+}
+
+.feedback__message-field {
+    resize: none;
+    padding-top: 21px;
+    min-height: 145px;
+}
+
+.feedback__name-input:focus, .feedback__email-input:focus, .feedback__message-field:focus {
+    box-shadow: 0 0 3px #1F3F68;
+    opacity: 1;
+}
+
+.feedback__button {
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contact-info {
+    font-style: normal;
+}
+
+.contacts-info__mail-address-title, .contacts-info__phones-title, .contacts-info__web-email-title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.contacts-info__mail-address {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.contacts-info__phone-link, .contacts-info__web-link, .contacts-info__email-link {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    text-decoration: none;
+    padding-left: 37px;
+    background: url("../images/phone.svg") no-repeat left center;
+}
+
+.contacts-info__phone, .contacts-info__web, .contacts-info__email {
+    display: block;
+    padding-bottom: 16px;
+}
+
+.contacts-info__web-email-title {
+    margin-top: 24px;
+}
+
+.contacts-info__web-link {
+    background: url("../images/web.svg") no-repeat left center;
+} 
+
+.contacts-info__email-link {
+    background: url("../images/email.svg") no-repeat left center;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info__wrapper {
+        flex-direction: column;
+    }
+
+    .conacts-info__image {
+        padding-top: 0;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .contacts-info__phone-link, .contacts-info__web-link, .contacts-info__email-link {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .contacts-info__mail-address-title, .contacts-info__phones-title, .contacts-info__web-email-title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 30px;
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .conacts-info__image {
+        max-width: 230px;
+    }
+    .feedback__wrapper {
+        flex-basis: calc(57% - 72px);
+        box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        padding: 36px;
+    }
+}
+
+.map {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 96px;
+}
+
+.map__screen {
+    width: 100%;
+}

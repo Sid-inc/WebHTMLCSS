@@ -40,9 +40,9 @@
         </div>
     </header>
     <main>
-        <div class="wrapper">
+        <div class="contact-info__wrapper">
             <address class="contact-info">
-                <img src="images/contacts_img.svg" alt="contacts">
+                <img class="conacts-info__image" src="images/contacts_img.svg" alt="contacts">
                 <h3 class="contacts-info__mail-address-title">
                     Address
                 </h3>
@@ -53,15 +53,23 @@
                     Phone
                 </h3>
                 <p class="contacts-info__phones">
-                    <a class="contacts-info__phone" href="tel:+62-812-7313-4321">+62-812-7313-4321</a>
-                    <a class="contacts-info__phone" href="tel:+62-817-000-1234">+62-817-000-1234</a>
+                    <span class="contacts-info__phone">
+                        <a class="contacts-info__phone-link" href="tel:+62-812-7313-4321">+62-812-7313-4321</a>
+                    </span>
+                    <span class="contacts-info__phone">
+                        <a class="contacts-info__phone-link" href="tel:+62-817-000-1234">+62-817-000-1234</a>
+                    </span>
                 </p>    
                 <h3 class="contacts-info__web-email-title">
                     Online service
                 </h3>
                 <p class="contacts-info__web-email">
-                    <a class="contacts-info__web" href="http://www.afrianska.com">www.afrianska.com</a>
-                    <a class="contacts-info__email" href="email:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
+                    <span class="contacts-info__web">
+                        <a class="contacts-info__web-link" href="http://www.afrianska.com">www.afrianska.com</a>
+                    </span>
+                    <span class="contacts-info__email">
+                        <a class="contacts-info__email-link" href="email:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
+                    </span>
                 </p>
             </address>
             <div class="feedback__wrapper">
@@ -72,13 +80,13 @@
                     <label class="feedback__email-label" for="email">Email</label>
                     <input class="feedback__email-input" type="text" name="email" placeholder="Your Email">
                     <label class="feedback__message-label" for="message">Message</label>
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <textarea class="feedback__message-field" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                     <button class="feedback__button button">Submit</button>
                 </form>
             </div>
         </div>
         <section class="map">
-            
+            <iframe class="map__screen" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11201.061901813373!2d-75.68770632044149!3d45.42414956730385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1591692031179!5m2!1sru!2sru" height="480" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </main>
     <footer class="footer">
