@@ -61,8 +61,8 @@ body {
 }
 
 .templates__text {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 14px;
 }
 
@@ -79,33 +79,32 @@ body {
     width: 100%;
 }
 
-.tehnologies__title,
-.metodologies__title {
-    font-size: 14px;
+.tehnologies__title {
+    font-size: 12px;
     margin-bottom: 4px;
 }
 
-.tehnologies__list,
-.metodologies__list {
+.tehnologies__list {
     list-style: none;
 }
 
-.tehnologies__item,
-.metodologies__item {
+.tehnologies__item {
     display: inline;
-    font-size: 12px;
+    font-size: 10px;
     opacity: .8;
 }
 
-.tehnologies {
-    margin-right: 20px;
-}
-
-@media screen and (max-width: 360px){ 
+@media screen and (max-width: 396px) { 
     .templates__title {
-        font-size: 16px;
+        font-size: 14px;
     }
     .templates__text {
         font-size: 12px;
+    }
+    .tehnologies__title {
+        font-size: 10px;
+    }
+    .tehnologies__item {
+        font-size: 8px;
     }
 }
