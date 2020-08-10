@@ -1,0 +1,31 @@
+{
+  "name": "webhtmlcss",
+  "version": "1.0.0",
+  "description": "HTML CSS training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sid-inc/WebHTMLCSS.git"
+  },
+  "author": "Sid-inc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sid-inc/WebHTMLCSS/issues"
+  },
+  "homepage": "https://github.com/Sid-inc/WebHTMLCSS#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}

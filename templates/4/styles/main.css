@@ -26,7 +26,7 @@ ul {
 }
 
 .top-line {
-    max-width: 1366px;
+    max-width: 1360px;
     height: 130px;
     margin: 0 auto;
  }
@@ -201,11 +201,16 @@ ul {
     cursor: pointer;
     padding-top: 15px;
     padding-bottom: 15px;
+    outline: none;
 }
 
-.banner__button{
+.banner__button {
     box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
     margin-top: 71px;
+}
+
+.banner__button:hover {
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2), 0 0 10px #356EAD;
 }
 
 @media screen and (max-width: 992px) {
@@ -295,8 +300,10 @@ ul {
 
 .what_we_do__image {
     position: absolute;
-    bottom: 345px;
-    left: 82px;
+    z-index: 1;
+    left: 50%;
+    top: -36px;
+    transform: translateX(-50%);
 }
 
 .what_we_do__title {
@@ -304,6 +311,7 @@ ul {
     line-height: 30px;
     letter-spacing: 0.05em;
     margin-bottom: 16px;
+    z-index: 10;
 }
 
 .what_we_do__text {
@@ -335,11 +343,6 @@ ul {
         padding-left: 15px;
         padding-right: 15px;
     }
-
-    .what_we_do__image {
-        left: 33px;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -349,11 +352,6 @@ ul {
         padding-left: 48px;
         padding-right: 48px;
     }
-
-    .what_we_do__image {
-        left: 82px;
-    }
-
     .what_we_do__wrapper {
         height: auto;
         align-items: center;
@@ -380,11 +378,6 @@ ul {
         margin-left: 0;
         margin-top: 50px;
     }
-
-    .what_we_do__image {
-        left: 15%;
-    }
-
     .what_we_do__description {
         position: static;
         margin-bottom: 150px;
@@ -531,7 +524,14 @@ ul {
     }      
     
     .projects__title {
-        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .projects__header {
+        flex-direction: column;
+        align-items: flex-start
     }
 }
 
@@ -594,7 +594,7 @@ ul {
     padding-bottom: 125px;
 }
 
-.cliens__header {
+.clients__header {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -775,8 +775,12 @@ ul {
     padding-right: 10px;
 }
 
-.feed-back__button{
+.feed-back__button {
     margin-right: 25px;
+}
+
+.feed-back__button:hover {
+    box-shadow: 0 0 10px #85bef0;
 }
 
 .footer__break-line {
@@ -871,6 +875,17 @@ ul {
     .footer__break-line {
         top: 440px;
         right: 25px;
+    }
+
+    .clients__title {
+        margin-bottom: 10px;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .clients__header {
+        flex-direction: column;
+        align-items: flex-start
     }
 }    
 
