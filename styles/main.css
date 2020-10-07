@@ -19,7 +19,7 @@ body {
 
 .templates__item {
     display: block;
-    height: 200px;
+    min-height: 200px;
     text-decoration: none;
     color: #050505;
     margin: 10px;

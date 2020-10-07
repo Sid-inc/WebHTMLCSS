@@ -26,7 +26,7 @@ function scripts() {
 
 function startwatch() {
   watch(['templates/5/**/*.js', '!templates/5/**/*.min.js'], scripts);
-  watch('templates/5/sass/**/*templates/5/sass/**/*', styles);
+  watch('templates/5/sass/**/*.scss', styles);
   watch('templates/5/*.html').on('change', browserSync.reload);
 }
 
