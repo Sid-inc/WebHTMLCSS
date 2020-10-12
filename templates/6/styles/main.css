@@ -42,6 +42,13 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .main-header__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .main-header__wrapper::after {
   content: '';
   padding-top: 5%;
@@ -76,6 +83,12 @@ linear-gradient(to left top, transparent 49.5%, #FFFFFF 50%) right / 50.025% 100
   line-height: 25px;
   color: rgba(51, 51, 51, 0.8);
   text-indent: 20px;
+}
+
+@media screen and (max-width: 396px) {
+  .desc__text {
+    font-size: 14px;
+  }
 }
 
 .wrapper {
