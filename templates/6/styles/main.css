@@ -86,6 +86,12 @@ linear-gradient(to left top, transparent 49.5%, #FFFFFF 50%) right / 50.025% 100
   padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .desc {
+    margin-left: 0;
+  }
+}
+
 .desc__text {
   font-family: Roboto;
   font-style: normal;
