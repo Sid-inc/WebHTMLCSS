@@ -38,7 +38,7 @@ body {
   max-width: 930px;
   margin: 0 auto;
   background: #FFFFFF;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 60px;
 }
 
@@ -61,10 +61,6 @@ linear-gradient(to left top, transparent 49.5%, #FFFFFF 50%) right / 50.025% 100
 }
 
 .book {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
   margin-bottom: 20px;
 }
 
@@ -72,14 +68,9 @@ linear-gradient(to left top, transparent 49.5%, #FFFFFF 50%) right / 50.025% 100
 .book__front {
   border-radius: 3px;
   box-shadow: 0px 10px 20px rgba(153, 151, 151, 0.5);
-  transform: rotateY( 35deg) rotateX( 12deg) rotateZ( -5deg);
 }
 
-.book__back {
-  border-radius: 3px;
-  box-shadow: 0px 10px 20px rgba(153, 151, 151, 0.5);
-  transform: rotateY( 53deg) rotateX( 10deg) rotateZ( -5deg) translateX( 34px) translateY( 14px);
-}
+
 
 .desc {
   margin-left: 35px;
@@ -104,7 +95,7 @@ linear-gradient(to left top, transparent 49.5%, #FFFFFF 50%) right / 50.025% 100
 
 @media screen and (max-width: 396px) {
   .desc__text {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
@@ -157,7 +148,7 @@ linear-gradient(to left top, transparent 49.5%, #FFFFFF 50%) right / 50.025% 100
   max-width: 940px;
   margin: 0 auto;
   margin-top: 35px;
-  padding: 10px;
+  padding: 20px;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(153, 151, 151, 0.5);
 }
