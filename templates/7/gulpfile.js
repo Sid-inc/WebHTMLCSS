@@ -20,7 +20,7 @@ function browsersync() {
 function startwatch() {
 	// Выбираем все файлы JS в проекте, а затем исключим с суффиксом .min.js
 	watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
-	watch('app/**/sass/**/*', styles);
+	watch('app/**/scss/**/*', styles);
 	watch('app/**/*.html').on('change', browserSync.reload);
 	watch('app/img/src/**/*', images);
 }
@@ -45,7 +45,7 @@ function scriptsBuild() {
 }
 
 function styles() {
-	return src('app/scss/*.scss') // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
+	return src('app/scss/main.scss') // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
 	.pipe(sass())
 	.pipe(concat('app.min.css')) // Конкатенируем в файл app.min.css
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 2 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer
@@ -55,7 +55,7 @@ function styles() {
 }
 
 function stylesBuild() {
-	return src('app/scss/*.scss') // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
+	return src('app/scss/main.scss') // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
 	.pipe(sass())
 	.pipe(concat('app.min.css')) // Конкатенируем в файл app.min.css
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 2 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer

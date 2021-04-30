@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'din';
+  src: local('DINPro');
+  src: url('../fonts/DINPro-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ptsans-bold';
+  src: local('ptsans');
+  src: url('../fonts/PTSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ptsans';
+  src: local('ptsans');
+  src: url('../fonts/PTSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: local('Roboto');
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: local('Roboto');
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="" />
   <link rel="stylesheet" href="css/app.min.css" type="text/css" />
-  <title>Site</title>
+  <title>Gidrator - европейская сантехника</title>
 </head>
 <body>
-
+  <header class="main-header">
+    <div class="main-header__first-line first-line">
+      <a class="first-line__logo" href="index.html" aria-label="Главная страница"><img src="img/logo.png" alt="Лого компании Gidrator" width="190" height="52"></a>
+      <h1 class="visually-hidden">Gidrator - европейская сантехника</h1>
+      <nav class="first-line__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Производители</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Гарантии и возврат</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Оплата</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="first-line__user user-nav">
+        <li class="user-nav__item"><a class="user-nav__link" href="#">Вход</a></li>
+        <li class="user-nav__item"><a class="user-nav__link" href="#">Регистрация</a></li>
+      </ul>
+    </div>
+    <div class="main-header__second-line second-line">
+      <a class="second-line__catalog-link" href="#">
+        Каталог товаров
+      </a>
+      <form class="second-line__search search" action="https://echo.htmlacademy.ru" method="GET">
+        <input class="search__field" type="search" name="search">
+        <button type="submit" aria-label="Найти"></button>
+        <div class="second-line__phone phone">
+          <a class="phone__link" href="tel:88000000000">8-800-000-00-00</a>
+          <button class="phone__recall" type="button">Вам перезвонить?</button>
+        </div>
+      </form>
+      <div class="second-line__actions">
+        <button class="button button--transparent button--favorits" type="button">Избранное</button>
+        <button class="button button--transparent button--comparison" type="button">Сравнение</button>
+        <button class="button button--transparent button-cart" type="button">Корзина</button>
+      </div>
+    </div>
+  </header>
   <script src="js/app.min.js"></script>
 </body>
 </html>
