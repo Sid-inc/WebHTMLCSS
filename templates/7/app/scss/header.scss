@@ -1,0 +1,77 @@
+@use 'mixin' as mixin;
+
+.first-line {
+  @include mixin.center-block();
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 76px;
+}
+
+.main-header__break-line {
+  color: #6F7682;
+  background-color: #6F7682;
+  border: none;
+  height: 1px;
+  margin: 0;
+}
+
+.first-line__logo {
+  margin-right: 28px;
+
+  & img {
+    width: 190px;
+    height: 52px;
+  }
+}
+
+.first-line__nav {
+  margin-right: auto;
+  flex-grow: 1;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 600px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.main-nav__item {
+  & + .main-nav__item {
+    margin-left: 8px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background-image: url('../img/user.svg');
+  }
+}
+
+.user-nav__item {
+  & + & {
+    &::before {
+      content: '/';
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+}

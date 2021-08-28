@@ -1,0 +1,1 @@
+@use 'normalize';@use 'fonts';@use 'header';.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;border:0;clip:rect(0 0 0 0)}body{font-family:ptsans,arial,sans-serif;font-size:14px}.link{text-decoration:none;white-space:nowrap;color:#6f7682}.link:hover{font-weight:700;text-decoration:underline;color:#4798de}

@@ -13,6 +13,7 @@ h1 {
   margin: .67em 0
 }
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible
@@ -27,6 +28,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted
 }
 b,
@@ -99,6 +101,7 @@ fieldset {
   padding: .35em .75em .625em
 }
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -114,6 +117,7 @@ textarea {
 }
 [type=checkbox],
 [type=radio] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0
 }
@@ -146,38 +150,128 @@ template {
 }
 @font-face {
   font-family: din;
-  src: local('DINPro');
-  src: url(../fonts/DINPro-Bold.ttf) format('truetype');
-  font-style: normal;
-  font-weight: 700
-}
-@font-face {
-  font-family: ptsans-bold;
-  src: local('ptsans');
-  src: url(../fonts/PTSans-Bold.ttf) format('truetype');
+  src: local("DINPro");
+  src: url(../fonts/DINPro-Bold.ttf) format("truetype");
   font-style: normal;
   font-weight: 700
 }
 @font-face {
   font-family: ptsans;
-  src: local('ptsans');
-  src: url(../fonts/PTSans-Regular.ttf) format('truetype');
+  src: local("ptsans");
+  src: url(../fonts/PTSans-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700
+}
+@font-face {
+  font-family: ptsans;
+  src: local("ptsans");
+  src: url(../fonts/PTSans-Regular.ttf) format("truetype");
   font-style: normal;
   font-weight: 400
 }
 @font-face {
-  font-family: roboto-bold;
-  src: local('Roboto');
-  src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+  font-family: roboto;
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
   font-style: normal;
   font-weight: 700
 }
 @font-face {
   font-family: roboto;
-  src: local('Roboto');
-  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
   font-style: normal;
   font-weight: 400
+}
+.first-line {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 76px
+}
+.main-header__break-line {
+  color: #6f7682;
+  background-color: #6f7682;
+  border: none;
+  height: 1px;
+  margin: 0
+}
+.first-line__logo {
+  margin-right: 28px
+}
+.first-line__logo img {
+  width: 190px;
+  height: 52px
+}
+.first-line__nav {
+  margin-right: auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 600px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0
+}
+.main-nav__item + .main-nav__item {
+  margin-left: 8px
+}
+.user-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0
+}
+.user-nav:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  background-image: url(../img/user.svg)
+}
+.user-nav__item + .user-nav__item::before {
+  content: "/";
+  margin-left: 4px;
+  margin-right: 4px
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 .visually-hidden {
   position: absolute;
@@ -192,4 +286,13 @@ template {
 body {
   font-family: ptsans,arial,sans-serif;
   font-size: 14px
+}
+.link {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #6f7682
+}
+.link:hover {
+  text-decoration: underline;
+  color: #4798de
 }
